@@ -17,6 +17,7 @@
                 <th>年龄</th>
                 <th>技能</th>
                 <th>评分</th>
+                <th>备注</th>
             </tr>
         </thead>
         <!-- s15-1-2 tbody contains the row of tabular -->
@@ -29,6 +30,10 @@
                 <td>20</td>
                 <td>PHP</td>
                 <td>80</td>
+                <!-- s16-1-1 rowspan will allow one row contain many rows -->
+                <td rowspan="4">
+                    前三名升职加薪
+                </td>
             </tr>
             <tr>
                 <td>李四</td>
@@ -43,6 +48,11 @@
                 <td>22</td>
                 <td>Python</td>
                 <td>95</td>
+            </tr>
+            <!-- s16-1-2 colspan will allow one column contain many columns -->
+            <tr>
+                <td>总人数</td>
+                <td colspan="4">2000</td>
             </tr>
         </tbody>
         
