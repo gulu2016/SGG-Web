@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>小标题</title>
+        <style>
+            /* s28-1-1 decorate button using embaded css style */
+            .btn1 {
+                display: block;
+                width: 150px; 
+                height: 40px; 
+                background-color: rgb(245, 241, 129); 
+                color: rgb(238, 31, 31);
+                border: 3px solid rgb(238, 23, 66);
+                font-size: 22px;
+                font-family: '隶书';
+                line-height: 30px;
+                border-radius: 5px;
+            }
+        </style>
+        <!-- s28-1-2 defing embaded js code using script tag -->
+        <script>
+            function suprise(){
+                alert("Hello,我是惊喜")
+            }
+        </script>
+    </head>
+    <body>
+        <!-- s28-1-3 call suprise() function when keyboard click the button -->
+        <button class="btn1" onclick="suprise()">点我有惊喜</button>
+    </body>
+</html>
