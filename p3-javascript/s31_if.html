@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // s31-1-1 get string from user input
+        var monthStr = prompt("please input month")
+        console.log(typeof monthStr)
+
+        // s31-1-2 convert string to number
+        var month = Number.parseInt(monthStr)
+        console.log(typeof month)
+
+        // s31-1-3 if will take non empty string as true
+        if('false'){// 非空字符串 if判断为true
+            console.log(true)
+        }else{
+            console.log(false)
+        }
+        // s31-1-4 if will take empty string as false
+        if(''){// 长度为0字符串 if判断为false
+            console.log(true)
+        }else{
+            console.log(false)
+        }
+        // s31-1-5 if will take non zero number as true
+        if(4){// 非零数字 if判断为true
+            console.log(true)
+        }else{
+            console.log(false)
+        }
+        // s31-1-6 if will take zero number as false
+        if(0){
+            console.log(true)
+        }else{
+            console.log(false)
+        }
+        // s31-1-7 if will take null as false
+        if(null){
+            console.log(true)
+        }else{
+            console.log(false)
+        }
+        // s31-1-8 if will take none null object as false
+        if(new Object()){
+            console.log(true)
+        }else{
+            console.log(false)
+        }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
