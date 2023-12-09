@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+        // s42-1-2 the first way to define onload function, like other event function
+        function ready(){
+            // s42-1-4 get dom element by id, div is the object of div element
+            var div1 = document.getElementById("d1")
+            // s42-1-5 bind event to dom element, onclick is the event, function is the event handler
+            div1.onclick = function(){
+                div1.style.backgroundColor = "red"
+            }
+
+            // s42-1-6 get dom element by id, btn is the object of button element
+            var btn = document.getElementById("btn1")
+            // s42-1-7 bind event to dom element, onclick is the event, function is the event handler
+            btn.onclick = div1.onclick
+            function aaa(){
+                alert("click the button")
+            }
+
+
+            
+        }
+
+        // s42-1-3 the second way to define onload function,using window.onload
+        // window.onload = function(){
+        //     var btn = document.getElementById("btn1")
+        //     btn.onclick = aaa
+            
+        //     function aaa(){
+        //         alert("click the button")
+        //     }
+        // }
+    </script>
+    <style>
+        .div1{
+            width: 100px;
+            height: 100px;
+            background-color: blue;
+        }
+    </style>
+</head>
+<!-- s42-1-1 browser will call ready when page is loading -->
+<body onload="ready()">
+    <button id="btn1">button</button>
+    
+    <div id="d1" class="div1">
+
+    </div>
+</body>
+</html>
