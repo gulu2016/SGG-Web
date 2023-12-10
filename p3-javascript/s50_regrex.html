@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // s50-1-1 test if the string contains the pattern
+        // 创建一个最简单的正则表达式对象
+        var reg = /o/;
+        // 创建一个字符串对象作为目标字符串
+        var str = 'Hello World!';
+        // 调用正则表达式对象的test()方法验证目标字符串是否满足我们指定的这个模式，返回结果true
+        console.log("/o/.test('Hello World!')="+reg.test(str));
+
+        // s50-1-2 find the first match
+        // 创建一个最简单的正则表达式对象
+        var reg = /o/;
+        // 创建一个字符串对象作为目标字符串
+        var str = 'Hello World!';
+        // 在目标字符串中查找匹配的字符，返回匹配结果组成的数组
+        var resultArr = str.match(reg);
+        // 数组长度为1
+        console.log("resultArr.length="+resultArr.length);
+        // 数组内容是o
+        console.log("resultArr[0]="+resultArr[0]);
+
+        // s50-1-4 replace the first match
+        // 创建一个最简单的正则表达式对象
+        var reg = /o/;
+        // 创建一个字符串对象作为目标字符串
+        var str = 'Hello World!';
+        var newStr = str.replace(reg,'@');
+        // 只有第一个o被替换了，说明我们这个正则表达式只能匹配第一个满足的字符串
+        console.log("str.replace(reg)="+newStr);//Hell@ World!
+        // 原字符串并没有变化，只是返回了一个新字符串
+        console.log("str="+str);//str=Hello World!
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
